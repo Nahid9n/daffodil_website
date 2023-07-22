@@ -1,0 +1,50 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.row{
+    position: relative;
+}
+.row::after{
+    content: ' ';
+    clear: both;
+    display: block;
+}
+
+.fs-7{
+    font-size: 11px;
+    font-family: "Poppins", Arial, sans-serif;
+}
+.bg-cs{
+    background-color: #0D1128;
+}
+.cover{
+    background-image: url("../images/about.webp");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.animation{
+    animation-name: gallery;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+@keyframes gallery {
+    0%{
+        background-image: url("../images/3e7948e37f3bdd83a90f0340d29d01c2.webp");
+    }
+    25%{
+        background-image: url("../images/1021144f9eb0dd9e0f858405e9c82949.webp");
+    }
+    50%{
+        background-image: url("../images/a7ac450870ee09fec3b970ae8f9966c9.webp");
+    }
+    100%{
+        background-image: url("../images/bb7635b32cdaef3ca879e4dc8a517480.webp");
+    }
+
+
+}
+
